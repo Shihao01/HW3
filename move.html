@@ -1,0 +1,46 @@
+<<!DOCTYPE html>
+<html>
+    <head>
+        <title>Movie Ratings</title>
+        <meta charset="UTF-8">
+       <link rel=StyleSheet href="movie.css" type="text/css">
+        
+    </head>
+    <body>
+        
+		<div id="page">
+    <h1> The Movie Rating App</h1>
+    <p> Enter a movie title and rate it on a scale from 1 to 5!</p>
+    <div id="image">
+        <img id="image2" src="movie.jpeg" alt="movie theater" width="350" height="250"></div>
+    <br /><br />
+	
+        <div class="container">
+            <div class="tab tab-1">
+			<table id="table1" border="1">
+			<tr>
+                        <th>Movie Name &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th>
+                        <th>Rating</th>
+                        
+                    </tr>
+</p>              
+			  <table id="table" border="1">
+                               
+                </table>
+            </div>
+            <div class="tab tab-2">
+                Movie Name :<input type="text" name="moviename" id="moviename">
+                Rating 1-5 :<input type="number" name="rating" id="rating">
+               
+                
+                <button onclick="addmoive();">Add</button>              
+                <button onclick="removemoive();">Remove</button>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+<script src="movie.js"></script>
+<script src="main.js"></script>
+        
+        
+    </body>
+</html>
