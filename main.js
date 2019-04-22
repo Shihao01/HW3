@@ -22,28 +22,6 @@
             }
             }
 // add Movie title Name and rating 
- function checkEmptyInput()
-            {
-                var isEmpty = false,
-                    fname = document.getElementById("moviename").value,
-                    lname = document.getElementById("rating").value;
-                    
-            
-                if(moviename === ""){
-                    alert("moviename Connot Be Empty");
-                    isEmpty = true;
-                }
-                else if(rating <= 0){
-                    alert("rating should be between 1-5 Please remove last input");
-                    isEmpty = true;
-                }
-				else if (rating > 5){
-					alert("rating should be between 1-5 Please remove last input");
-					isEmpty = true;
-				}
-                
-                return isEmpty;
-            }// a method to validate  if the two fields are valid 
     
 
 var rIndex,
