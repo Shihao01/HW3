@@ -5,21 +5,21 @@
                 // create a new row and cells
                 // get value from input text
                 // set the values into row cell's
-                if(!checkEmptyInput()){
+                if(checkEmptyInput()==false){
                 var newRow = table.insertRow(table.length),
                     cell1 = newRow.insertCell(0),
                     cell2 = newRow.insertCell(1);
                     
                     moviename = document.getElementById("moviename").value,
-                    rating = document.getElementById("rating").value,
-                    
-            
+                    rating = document.getElementById("rating").value,                         
                 cell1.innerHTML = moviename;
                 cell2.innerHTML = rating;
-                
-                // call the function to set the event to the new row
+                               // call the function to set the event to the new row
                 selectedRowToInput();
             }
+              else {
+              return checkEmptyInput(); 
+              }
             }
 // add Movie title Name and rating 
     
