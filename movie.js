@@ -24,8 +24,8 @@
  function checkEmptyInput()
             {
                 var isEmpty = false,
-                    fname = document.getElementById("moviename").value,
-                    lname = document.getElementById("rating").value;
+                    moviename = document.getElementById("moviename").value,
+                    rating = document.getElementById("rating").value;
                     
             
                 if(moviename === ""){
