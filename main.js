@@ -1,5 +1,31 @@
 //two button's event 
-  function addmoive()
+var rIndex,
+                table = document.getElementById("table");
+
+function checkEmptyInput()
+            {
+                var isEmpty = false,
+                    moviename = document.getElementById("moviename").value,
+                    rating = document.getElementById("rating").value;
+                    
+            
+                if(moviename === ""){
+                    alert("moviename Connot Be Empty");
+                    isEmpty = true;
+                }
+                else if(rating <= 0){
+                    alert("rating should be between 1-5 Please remove last input");
+                    isEmpty = true;
+                }
+				else if (rating > 5){
+					alert("rating should be between 1-5 Please remove last input");
+					isEmpty = true;
+				}
+                
+                return isEmpty;
+            }// a method to validate  if the two fields are valid 
+
+function addmoive()
             {
                 // get the table by id
                 // create a new row and cells
@@ -22,10 +48,27 @@
               }
             }
 // add Movie title Name and rating 
-    
+  
+ function selectedRowToInput()
+            {
+                
+                for(var i = 1; i < table.rows.length; i++)
+                {
+                    table.rows[i].onclick = function()
+                    {
+                      // get the seected row index
+                      rIndex = this.rowIndex;
+                      document.getElementById("moviename").value = this.cells[0].innerHTML;
+                      document.getElementById("rating").value = this.cells[1].innerHTML;
+                      
+                    };
+                }
+            }
+       
+            
+// property to hold movie title and rating 
 
-var rIndex,
-                table = document.getElementById("table");
+
  function removemoive()
             {
                 table.deleteRow(rIndex);
