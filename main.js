@@ -9,7 +9,7 @@ function checkEmptyInput()
                     rating = document.getElementById("rating").value;
                     
             
-                if(moviename === ""){
+                if(moviename == ""){
                     alert("moviename Connot Be Empty");
                     isEmpty = true;
                 }
@@ -17,9 +17,9 @@ function checkEmptyInput()
                     alert("rating should be between 1-5 Please remove last input");
                     isEmpty = true;
                 }
-				else if (rating > 5){
-					alert("rating should be between 1-5 Please remove last input");
-					isEmpty = true;
+		else if (rating > 5){
+		alert("rating should be between 1-5 Please remove last input");
+		isEmpty = true;
 				}
                 
                 return isEmpty;
@@ -31,7 +31,7 @@ function addmoive()
                 // create a new row and cells
                 // get value from input text
                 // set the values into row cell's
-                if(checkEmptyInput()==false){
+                if(!checkEmptyInput()){
                 var newRow = table.insertRow(table.length),
                     cell1 = newRow.insertCell(0),
                     cell2 = newRow.insertCell(1);
