@@ -30,7 +30,7 @@
             </div>
             <div class="tab tab-2">
                 Movie Name :<input type="text" name="moviename" id="moviename">
-                Rating 1-5 :<input type="number" name="rating" id="rating">
+                Rating 1-5 :<input type="number" name="rating" id="rating" onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}" onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}">
                
                 
                 <button onclick="addmoive();">Add</button>              
