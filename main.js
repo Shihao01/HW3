@@ -1,6 +1,6 @@
 //two button's event 
 var rIndex,
-                table = document.getElementById("table");
+table = document.getElementById("table");
 
 function checkEmptyInput()
             {
@@ -64,5 +64,3 @@ function addmoive()
                 document.getElementById("rating").value = "";               
             }
 // remove data not need 
-
-
